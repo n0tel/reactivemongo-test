@@ -3,7 +3,6 @@ package controllers
 import java.util.Date
 import javax.inject.Inject
 
-import play.api._
 import play.api.libs.json.{JsArray, JsObject, Json}
 import play.api.mvc._
 import play.modules.reactivemongo.{MongoController, ReactiveMongoApi, ReactiveMongoComponents}
@@ -11,8 +10,8 @@ import reactivemongo.api.Cursor
 import reactivemongo.play.json._
 import reactivemongo.play.json.collection.JSONCollection
 
-import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
 
 class Application @Inject()(
   val reactiveMongoApi: ReactiveMongoApi
